@@ -23,7 +23,18 @@ struct ContentView: View {
                         
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
                             .foregroundColor(.white)
-                            .blur(radius: 5)
+                            .blur(radius: 4)
+                            .offset(x: -8, y: -8)
+                        
+                        RoundedRectangle(cornerRadius: 16, style: .continuous)
+//                            .foregroundColor(
+//                                Color(#colorLiteral(red: 0.7608050108, green: 0.8164883852, blue: 0.9259157777, alpha: 1)))
+                            .fill(
+                                LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.7608050108, green: 0.8164883852, blue: 0.9259157777, alpha: 1)), Color.white]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/)
+                            )
+                            .padding(2)
+                            .blur(radius: 2)
+
                     }
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
