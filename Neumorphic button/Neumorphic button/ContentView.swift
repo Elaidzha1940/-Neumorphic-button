@@ -14,7 +14,7 @@ struct ContentView: View {
         
         
         VStack {
-           Text("Button")
+            Text("Button")
                 .font(.system(size: 20, weight: .semibold, design: .rounded))
                 .frame(width: 200, height: 60)
                 .background(
@@ -27,14 +27,12 @@ struct ContentView: View {
                             .offset(x: -8, y: -8)
                         
                         RoundedRectangle(cornerRadius: 16, style: .continuous)
-//                            .foregroundColor(
-//                                Color(#colorLiteral(red: 0.7608050108, green: 0.8164883852, blue: 0.9259157777, alpha: 1)))
                             .fill(
                                 LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.7608050108, green: 0.8164883852, blue: 0.9259157777, alpha: 1)), Color.white]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/)
                             )
                             .padding(2)
                             .blur(radius: 2)
-
+                        
                     }
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
@@ -44,7 +42,6 @@ struct ContentView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(#colorLiteral(red: 0.7608050108, green: 0.8164883852, blue: 0.9259157777, alpha: 1)))
         
-//        Color(#init(_colorLiteralRed: 0.7608050108, green: 0.8164883852, blue: 0.9259157777, alpha: 1)
     }
 }
 
