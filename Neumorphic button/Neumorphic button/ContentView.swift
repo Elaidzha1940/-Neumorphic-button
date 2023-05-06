@@ -17,7 +17,15 @@ struct ContentView: View {
            Text("Button")
                 .font(.system(size: 20, weight: .semibold, design: .rounded))
                 .frame(width: 200, height: 60)
-                .background(Color.white)
+                .background(
+                    ZStack {
+                        Color(#colorLiteral(red: 0.7608050108, green: 0.8164883852, blue: 0.9259157777, alpha: 1))
+                        
+                        RoundedRectangle(cornerRadius: 16, style: .continuous)
+                            .foregroundColor(.white)
+                            .blur(radius: 5)
+                    }
+                )
                 .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
                 .shadow(color: Color(#colorLiteral(red: 0.7608050108, green: 0.8164883852, blue: 0.9259157777, alpha: 1)), radius: 20, x: 20, y: 20)
                 .shadow(color: Color(.white), radius: 20, x: -20, y: -20)
